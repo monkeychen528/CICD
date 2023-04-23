@@ -34,10 +34,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-      - run: npm install
+      - name: Npm install
+        run: npm install
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo node -v
-          echo npm -v
+          node -v
+          npm -v
